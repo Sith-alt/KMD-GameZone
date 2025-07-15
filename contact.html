@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | KMD GameZone</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>KMD GameZone</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="Contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-form">
+    <h2>Contact / Feedback</h2>
+    <p>Found a broken link? Want to request a game? Let us know below!</p>
+
+    <form action="https://formspree.io/f/manbwany" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label for="message">Message</label>
+      <textarea name="message" id="message" rows="6" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 KMD GameZone. All rights reserved.</p>
+  </footer>
+</body>
+</html>

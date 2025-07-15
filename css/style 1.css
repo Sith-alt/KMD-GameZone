@@ -1,0 +1,36 @@
+.game-list {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.game-card {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.game-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.game-card h3 {
+  margin: 15px 0 10px;
+  color: limegreen;
+}
+
+/* Style for individual game page images */
+.game-img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}

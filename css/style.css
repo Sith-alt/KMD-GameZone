@@ -1,0 +1,380 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  background: #222;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #0f0;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #0f0;
+  color: #000;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+}
+
+/* Game Page Layout */
+.game-page {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+  color: #fff;
+}
+
+
+
+/* Style for individual game page images with 5:7 portrait ratio */
+.game-img {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Optional: Make lists nicer */
+.game-page ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* Game card images (games.html) */
+.game-card img {
+  width: 100%;
+  max-width: 360px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Game page image (e.g. gta-vice-city.html) */
+.game-img {
+  width: 100%;
+  max-width: 360px;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.search-container {
+  max-width: 500px;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+#clearSearch {
+  padding: 10px 15px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+mark {
+  background-color: #ffd54f;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+mark {
+  background-color: transparent;
+  color: #00fff7;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+  animation: pulse-glow 1.5s infinite alternate;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+/* 🔁 Pulse animation */
+@keyframes pulse-glow {
+  from {
+    text-shadow: 0 0 5px #00fff7, 0 0 10px #00fff7, 0 0 20px #00fff7;
+  }
+  to {
+    text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7, 0 0 30px #00fff7;
+  }
+}
+.filter-container {
+  max-width: 800px;
+  margin: 10px auto 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.filter-container select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.hero {
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px #000;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background: #00ffcc;
+  color: #000;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #00c8a8;
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+.hero-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: pulseGlow 2s infinite;
+  filter: drop-shadow(0 0 10px #00ffc8);
+}
+
+.glow-text {
+  font-size: 3rem;
+  color: #00ffcc;
+  text-shadow:
+    0 0 5px #00ffcc,
+    0 0 10px #00ffcc,
+    0 0 20px #00ffcc,
+    0 0 40px #00ffcc;
+  animation: glowText 3s ease-in-out infinite;
+}
+
+@keyframes glowText {
+  0%, 100% {
+    text-shadow:
+      0 0 5px #00ffcc,
+      0 0 10px #00ffcc,
+      0 0 20px #00ffcc,
+      0 0 40px #00ffcc;
+  }
+  50% {
+    text-shadow:
+      0 0 2px #00ffaa,
+      0 0 4px #00ffaa,
+      0 0 8px #00ffaa,
+      0 0 16px #00ffaa;
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px #00ffc8);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px #00ffd5);
+  }
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #111;
+  color: #00ffcc;
+  border: 1px solid #00ffcc;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 999;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+/* DARK MODE STYLES */
+body.dark-mode {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1a1a1a;
+  color: #00ffcc;
+}
+
+body.dark-mode a {
+  color: #00ffaa;
+}
+
+body.dark-mode .btn,
+body.dark-mode #musicBtn {
+  background-color: #222;
+  color: #00ffcc;
+  border-color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+body.dark-mode .game-card {
+  background-color: #1c1c1c;
+  border: 1px solid #00ffaa;
+  box-shadow: 0 0 10px rgba(0,255,170,0.2);
+}
+
+body.dark-mode .hero {
+  background-color: #000;
+}
+
+body.dark-mode .hero-content h1,
+body.dark-mode .hero-content p {
+  color: #00ffaa;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0,255,170,0.2);
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #00ffaa;
+  text-align: center;
+}
+
+.contact-form p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #00ffaa;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #00ffaa;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 10px #00ffaa;
+}
+
+.contact-form .btn {
+  margin-top: 20px;
+  background: #00ffaa;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contact-form .btn:hover {
+  background: #00ddaa;
+  box-shadow: 0 0 15px #00ffaa;
+}
